@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick&Morty-Proyecto Final-M.V.</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="img/rym.ico" />
+    <!--Fuente de google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,300&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Flexbox -->
+    <!-- Comienzo de Header -->
+    <header>
+      <!-- COMIENZO DE SECCION HEADER - TITULO -->
+      <div class="logo1">
+        <img
+          id="logo1"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a5bffb50-795a-4fcd-b892-52caa775b601/dewh6ww-b89b1fb9-f9c8-43c2-8f0f-655d464b4693.png/v1/fill/w_500,h_556/rick_and_morty_png_by_trentonxsterling88_dewh6ww-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTU2IiwicGF0aCI6IlwvZlwvYTViZmZiNTAtNzk1YS00ZmNkLWI4OTItNTJjYWE3NzViNjAxXC9kZXdoNnd3LWI4OWIxZmI5LWY5YzgtNDNjMi04ZjBmLTY1NWQ0NjRiNDY5My5wbmciLCJ3aWR0aCI6Ijw9NTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.py2SiPjbG7BFPPt5hMGZ7gfV2wICTkO2-CigWX7QPkU"
+          alt="Imagen 1 de Rick y Morty"
+          style="width: 150px"
+        />
+      </div>
+      <div class="logo2">
+        <img
+          id="logo2"
+          src="https://s.kaskus.id/images/2018/04/12/2678079_20180412075405.png"
+          alt="Logo 1 de Rick y Morty"
+          style="width: 400px"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#sinopsis">SINOPSIS</a>
+          </li>
+          <li>
+            <a href="#personajes">PERSONAJES</a>
+          </li>
+          <li>
+            <a href="#mirarlaserie">MIRAR LA SERIE</a>
+          </li>
+          <li>
+            <a href="#biografia">ACERCA DE..</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Comienzo de Main -->
+    <main>
+      <!-- COMIENZO SECCION SINOPSIS - El id se utiliza para css y la class para javascript -->
+      <!-- src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07NBwFzFp12NW1DZnF-lVbP7TYka5dBzaXQ0__cXgwhdLvAzvBF20HssIyqfu5EG8N0Q&usqp=CAU" -->
+      <!--      <section id="sinopsis" class="sinopsis"> -->
+      <!--  src="https://www.xtrafondos.com/thumbs/1_8453.jpg" -->
+      <!--  src="https://mobimg.b-cdn.net/v3/fetch/68/6813aa8c157e47c65cfaf79be8a5d9e0.jpeg" -->
+      <section id="sinopsis" class="sinopsis">
+        <img
+          src="https://mobimg.b-cdn.net/v3/fetch/68/6813aa8c157e47c65cfaf79be8a5d9e0.jpeg"
+          alt="Imagen 2 de Rick y Morty"
+          style="height: 280px; width: 300px"
+        />
+        <div>
+          <h2>Sinopsis:</h2>
+          <p>
+            La serie sigue las desventuras del cínico científico loco Rick
+            Sanchez y su bondadoso pero inquieto nieto Morty Smith, quienes
+            dividen su tiempo entre la vida doméstica y las aventuras
+            interdimensionales que tienen lugar en un número infinito de
+            realidades, a menudo viajando a otros planetas y dimensiones a
+            través de portales y en el platillo volador de Rick. El concepto
+            general de Rick y Morty se basa en dos escenarios en conflicto: el
+            drama familiar doméstico y un abuelo alcohólico que arrastra a su
+            nieto a travesuras.
+          </p>
+          <p>Creado por Justin Roiland y Dan Harmon.</p>
+          <p>Release: 2013.</p>
+          <p>País de origen: USA</p>
+        </div>
+      </section>
+      <!-- COMIENZO SECCION PERSONAJES - - El id se utiliza para css y la class para javascript-->
+      <section id="personajes" class="personajes">
+        <h2 class="titulo">Personajes:</h2>
+        <!-- Contenedor para Renderizar con Javascript -->
+        <script src="app.js"></script>
+        <div id="container" class="container">
+          <div class="contenedor-personajes" id="contenedor-personajes"></div>
+        </div>
+        <!--
+        <div class="grid-item">
+            <img
+              src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+              alt="foto de perfil de personaje"
+              style="width: 150px"
+            />
+            <h3>Alien Rick</h3>
+            <p>Gender: Male</p>
+            <p>Species: Alien</p>
+            <p>Staus: Unknown</p>
+        </div>
+        -->
+      </section>
+      <!-- COMIENZO SECCION MIRAR LA SERIE - El id se utiliza para css y la class para javascript -->
+      <section id="mirarlaserie" class="mirarlaserie">
+        <a
+          href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ?countryRedirect=1"
+          class="hbo-shortcut"
+          title="Mirar Rick and Morty ahora!"
+        >
+          <img
+            src="https://i.blogs.es/499822/hbo-max-logo-2019-elpoderdelasideas3/original.png"
+            alt="HBO Max logo"
+          />
+        </a>
+        <div>
+          <h2>Mirar la Serie:</h2>
+          <p>
+            Las 6 Sesiones de Rick y Morty estan disponibles en HBO Max. Tienen
+            un total de 61 episodios.
+          </p>
+        </div>
+      </section>
+      <!-- COMIENZO DE SECCION BIOGRAFIA DE AUTOR - El id se utiliza para css y la class para javascript-->
+      <section id="biografia" class="biografia">
+        <h2>Acerca de..</h2>
+        <p>
+          Mi nombre es Martín Valenzuela, nací y vivo actualmente en la
+          Provincia de San Juan - Argentina, soy casado y tengo 3 Hijas. Soy
+          Profesional de Informática y actualmente trabajo en el Area de
+          Ciberseguridad. Me gusta el Deporte, la Tecnología, el Aire Libre y
+          compartir momentos en Familia.
+        </p>
+      </section>
+    </main>
+    <!-- Comienzo de Footer -->
+    <footer>
+      <div>
+        <h3>Hecho con ♥ por Tincho.</h3>
+        <p>Introducción a Frontend</p>
+        <p>Marzo de 2023</p>
+        <p>Profesor: Gabriel Alberini</p>
+        <p>Autor del Prototipo: Martín Valenzuela</p>
+        <p>Argentina Programa 4.0</p>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li class="github">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-github"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                ></path>
+              </svg>
+              Mi Perfil de Github
+            </li>
+            <li class="contactame">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-mail-filled"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+                  stroke-width="0"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+                  stroke-width="0"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Contactame
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

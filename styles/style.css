@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header, main, footer {
+    padding: 10px;
+}
+
+/* Comienzo Estilos body, header, footer */
+body {
+    background-color: #4eb1ad;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghhS2tVSkK7ceqUqZKaDrAE3wtCS8orePhg&usqp=CAU);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgb(50, 135, 205);   
+    padding: 20px;
+    display: flex;
+    /* Cambio de eje principal */
+    /* flex-direction: row; */
+    /* Manejo de eje Principal, o sea, el X en un Contenedor flex */
+    justify-content: space-between;
+    /* Manejo de eje Secundario, o sea, el Y en un Contenedor flex */
+    align-items: center;
+}
+
+.logo1 img {
+    height: 50%;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    border-radius: 50%;
+    background-color: aquamarine;
+    box-shadow: 2px 2px 50px white;
+}
+
+.logo2 img {
+    width: 220px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+header nav ul li a {
+    color:blue;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color:crimson;
+}
+
+.sinopsis {
+    height: 50%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(143, 186, 221); 
+    /* Cambio de eje principal */
+    /* flex-direction: row; */
+    /* Manejo de eje Principal, o sea, el X en un Contenedor flex 
+    justify-content: space-between;
+    Manejo de eje Secundario, o sea, el Y en un Contenedor flex 
+    align-items: center;
+    width: 99%; */
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.sinopsis img {
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.sinopsis div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.container {
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(143, 186, 221); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+.titulo {
+    margin: 10px;
+    padding: 10px;
+    background-color:  rgb(143, 186, 221);
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Estilos pata items de Grid */
+
+.contenedor-personajes {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 250px;
+    padding: 30px;
+    margin: 10px;
+    background-color: rgb(170, 190, 56);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.tarjeta img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Comienzo Estilos Mirar la Serie */
+.mirarlaserie {
+    height: 50%;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+    display: flex;
+    background-color: rgb(143, 186, 221);
+    border-radius: 10px;;
+}
+
+.mirarlaserie img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;;
+}
+
+.mirarlaserie div {
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+
+}
+
+/* Comienzo Estilos Acerca de */
+.biografia {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(143, 186, 221);
+    font-size: 25px;
+    text-align: left;
+    border-radius: 10px; 
+}
+
+.biografia p {
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Comienzo Estilos Footer */
+footer {
+    background-color: rgb(50, 135, 205);   
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+footer div nav ul {
+    list-style: none;
+}
+
+.github {
+    font-size: 20px;
+    padding: 0px 10px;
+ /*   margin: 5px;  */
+    display: flex;
+    justify-content:left;
+}
+
+.contactame {
+    font-size: 20px;
+    padding: 0px 10px;
+ /*   margin: 5px;  */
+    display: flex;
+    justify-content:left;
+
+}
+
+/* Media queri o Punto de quiebre */
+
+@media (max-width: 480px) {
+
+    header {
+        background-color: yellow;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    .sinopsis {
+        flex-direction: column;
+    }
+
+    main {
+        background-image: url(https://cdn.pixabay.com/photo/2023/01/08/18/45/road-7705909_1280.jpg);
+        flex-direction: column;
+    }
+
+    .mirarlaserie {
+        flex-direction: column;
+    }
+
+    footer {
+        background-color: blueviolet;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
